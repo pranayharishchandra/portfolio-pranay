@@ -36,9 +36,9 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Before College After JEE Mains(entrance exam)",
+    title: "Before College After JEE Mains (Entrance Exam)",
     location: "REVA UNIVERSITY",
-    description: "Learned Python and developed a game using Python.",
+    description: "Learned Python and developed a game using Python. Also, learned GIT and pushed the project on GITHUB.",
     icon: React.createElement(LuGraduationCap),
     date: "2021",
   },
