@@ -3,14 +3,14 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
-// import { useSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  // const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
-      // ref={ref}
+      ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,6 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-
       <p className="mb-3">
         I am pursuing Bachelors in Technology (B. Tech) in Computer Science Engineering at REVA University. I am passionate about creating user-centric frontend experiences and mastering full-stack development. My development toolkit includes <span className="font-bold">
           MongoDB, Express, React, Node.js, Redux Tookit and JavaScript. </span>I am also experienced with TypeScript and Prisma.
@@ -36,8 +35,6 @@ export default function About() {
       <p className="mb-3">
         Outside of coding, I enjoy running, working out, watching current affairs videos, listening to music, and spending quality time with my parents and friends.
       </p>
-
-
     </motion.section>
   );
 }
