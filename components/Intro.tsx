@@ -7,6 +7,8 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import leetcodeLogo from "@/public/leetcode.svg"
+import youtubeLogo from "@/public/youtube.svg"
 // import { useSectionInView } from "@/lib/hooks";
 // import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -46,15 +48,17 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I am Pranay. </span> 
+        Hello, I am
+        <span className="font-bold"> Pranay. </span>
         I am a{" "}
-        <span className="font-bold">6th-semester CSE student at REVA UNIVERSITY, specializing in MERN-stack development </span> 
+        <span className="font-bold">6th-semester CSE </span>
+        student at REVA UNIVERSITY, specializing in MERN-stack development
         with{" "}
-        <span className="font-bold"> 1 year </span> 
+        <span className="font-bold"> 1 year </span>
         of experience. I enjoy building websites.
         My current focus is on React (Next.js).
 
@@ -104,6 +108,26 @@ export default function Intro() {
         >
           <FaGithubSquare />
         </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://leetcode.com/pranayharishchandra/"
+          target="_blank"
+        >
+          <Image src={leetcodeLogo.src} alt="LeetCode" width={20} height={20} />
+
+
+        </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.youtube.com/@codingisfun-pranayharishch3001/videos"
+          target="_blank"
+        >
+          <Image src={youtubeLogo.src} alt="LeetCode" width={20} height={20} />
+
+        </a>
+
+
       </motion.div>
     </section>
   );
