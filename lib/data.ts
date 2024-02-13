@@ -36,7 +36,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Before College After JEE Mains (Entrance Exam)",
+    title: "Before College After KCET (Entrance Exam)",
     location: "",
     description: "Learned <b>Python</b> and developed a game using Python. <br/>Also, learned <b>GIT</b> and pushed the project on GITHUB.",
     icon: React.createElement(LuGraduationCap),
@@ -59,7 +59,7 @@ export const experiencesData = [
   {
     title: "3rd Semester",
     location: "",
-    description: "Mastered <b>LinkedList, Hashing, Binary Trees, Binary Search Trees, Stack, and Queues</b> in C++ on Pepcoding. <br/>Solved over 70 questions on YouTube. <i>CGPA: 8.89</i>",
+    description: "Mastered <b>LinkedList, Hashing, Binary Trees, Binary Search Trees, Stack, and Queues</b> in C++ on Pepcoding. <br/>Solved over 60 questions on YouTube. <i>CGPA: 8.89</i>",
     icon: React.createElement(LuGraduationCap),
     date: "September 2022 - January 2023",
   },

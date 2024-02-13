@@ -15,6 +15,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  
 
   return (
     <section
@@ -48,21 +49,19 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        Hello, I am
-        <span className="font-bold"> Pranay. </span>
-        I am a{" "}
-        <span className="font-bold">6th-semester CSE </span>
-        student at REVA UNIVERSITY, specializing in MERN-stack development
-        with{" "}
-        <span className="font-bold"> 1 year </span>
-        of experience. I enjoy building websites.
-        My current focus is on React (Next.js).
+  className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-3xl"
+  initial={{ opacity: 0, y: 100 }}
+  animate={{ opacity: 1, y: 0 }}
+>
+  Hello there! I&apos;m
+  <span className="font-bold"> Pranay. </span> I&apos;m a{" "}
+  3rd-year <span className="font-bold">CSE</span> student at REVA UNIVERSITY, specializing in <span className="font-bold underline">MERN-stack </span> development with alomst <span className="font-bold underline">1 year</span> of experience.
+  <br/>
+  <br/>
+   My current focus is on <span className="font-bold underline">React (Next.js)</span>. 
+  Let&apos;s build something amazing together!
+</motion.h1>
 
-      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
